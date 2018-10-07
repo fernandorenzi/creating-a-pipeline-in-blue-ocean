@@ -20,5 +20,12 @@ pipeline {
         sh './jenkins/scripts/test.sh'
       }
     }
+    stage('Deliver') {
+      steps {
+        sh './jenkins/scripts/test.sh'
+        input 'Click Proceed'
+        sh './jenkins/scripts/kill.sh.'
+      }
+    }
   }
 }
