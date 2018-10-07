@@ -24,7 +24,7 @@ pipeline {
       steps {
         sh './jenkins/scripts/deliver.sh'
         input 'Click Proceed'
-        sh './jenkins/scripts/kill.sh.'
+        sh './jenkins/scripts/kill.sh'
       }
     }
   }
